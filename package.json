@@ -1,7 +1,32 @@
 {
   "name": "react-js-sample",
   "version": "1.0.0",
-  "private": true,
+  "description": "React.js + React Router v4 + Express.js Sample Project",
+  "author": {
+    "name": "Seongmin Park",
+    "email": "wluns32@gmail.com",
+    "url": "http://komalab.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/edoko/react-js-sample.git"
+  },
+  "bugs": {
+    "url": "http://github.com/edoko/react-js-sample/issues"
+  },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "keywords": [
+    "react",
+    "reactjs",
+    "reactrouter",
+    "expressjs",
+    "boilerplate",
+    "reactsample"
+  ],
+  "main": "public",
   "dependencies": {
     "express": "^4.15.4",
     "morgan": "^1.8.2",
