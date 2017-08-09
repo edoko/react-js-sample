@@ -1,0 +1,24 @@
+{
+  "name": "react-js-sample",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts build && babel-node server --presets=es2015",
+    "server": "babel-node server --presets=es2015",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
