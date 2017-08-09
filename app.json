@@ -1,0 +1,7 @@
+{
+  "name": "React.js Sample",
+  "description": "React.js + React Router v4 + Express.js Sample Project",
+  "repository": "https://github.com/edoko/react-js-sample",
+  "logo": "http://react-js-sample.herokuapp.com/favicon.ico",
+  "keywords": ["react", "reactjs", "reactrouter", "expressjs", "express", "boilerplate"]
+}
