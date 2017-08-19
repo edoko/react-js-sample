@@ -3,6 +3,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import path from 'path';
+import loader from './loader';
 
 const app = express();
 
@@ -11,9 +12,8 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 
 // server static file
 app.use(express.static(path.join(__dirname, '../build')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build', 'index.html'));
-});
+
+app.use('/', loader);
 
 // export module
 export default app;

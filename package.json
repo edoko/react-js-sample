@@ -1,11 +1,11 @@
 {
   "name": "react-js-sample",
   "version": "1.0.2",
-  "description": "React.js + React Router v4 + Express.js Sample Project",
+  "description": "React.js + React Router v4 + Express.js(Server-side rendering) Boilerplate Project",
   "author": {
     "name": "Seongmin Park",
     "email": "wluns32@gmail.com",
-    "url": "http://komalab.com/"
+    "url": "http://komalab.io/"
   },
   "repository": {
     "type": "git",
@@ -14,17 +14,21 @@
   "bugs": {
     "url": "http://github.com/edoko/react-js-sample/issues"
   },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "keywords": [
     "react",
     "reactjs",
     "reactrouter",
     "expressjs",
     "boilerplate",
-    "reactsample"
+    "reactsample",
+    "serverside",
+    "ssr"
   ],
   "main": "public",
   "dependencies": {
@@ -38,12 +42,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts build && babel-node server --presets=es2015",
-    "server": "babel-node server --presets=es2015",
+    "test": "react-scripts build && babel-node server",
+    "server": "babel-node server",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-plugin-transform-require-ignore": "^0.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
   }
 }
