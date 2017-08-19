@@ -7,7 +7,12 @@
 
 [Live Demo](http://react-js-sample.herokuapp.com/)
 
-This app is built using React.js + React Router v4 + Express.js
+This app is built using React.js Boilerplate project.
+* React.js (create-react-app)
+* React Router v4
+* Server: Node.js (Express)
+* Support 404 Not found page
+* Support Server-side rendering
 
 ### Installation
 
