@@ -6,7 +6,7 @@ import { StaticRouter } from 'react-router-dom';
 import App from '../src/components/Container/Container';
 
 export default (req, res) => {
-    const filePath = path.resolve(__dirname, '..', 'build', 'index.html')
+    const filePath = path.resolve(__dirname, '../build', 'index.html');
 
     fs.readFile(filePath, 'utf8', (err, htmlData)=>{
       if (err) {
