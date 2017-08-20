@@ -5,7 +5,7 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import App from '../src/components/Container/Container';
 
-module.exports = (req, res) => {
+export default (req, res) => {
     const filePath = path.resolve(__dirname, '..', 'build', 'index.html')
 
     fs.readFile(filePath, 'utf8', (err, htmlData)=>{
