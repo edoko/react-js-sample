@@ -4,7 +4,7 @@
   "description": "React.js + React Router v4 + Express.js(Server-side rendering) Boilerplate Project",
   "author": {
     "name": "Seongmin Park",
-    "email": "wluns32@gmail.com",
+    "email": "me@komalab.io",
     "url": "http://komalab.io/"
   },
   "repository": {
@@ -40,7 +40,7 @@
     "react-scripts": "1.0.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_ENV=development ./node_modules/.bin/babel-node server",
     "build": "react-scripts build",
     "test": "react-scripts build && babel-node server",
     "server": "babel-node server",
