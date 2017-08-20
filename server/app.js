@@ -12,9 +12,6 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 
 // server static file
 app.use(express.static(path.resolve(__dirname, '../build')));
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.html');
-});
 
 app.use('/', loader);
 
