@@ -11,7 +11,10 @@ const app = express();
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer"'));
 
 // server static file
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.resolve(__dirname, '../build')));
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
 
 app.use('/', loader);
 
