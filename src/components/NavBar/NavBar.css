@@ -1,0 +1,11 @@
+.NavList {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.NavList li {
+    display: inline-block;
+    padding: 0 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}

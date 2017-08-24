@@ -1,0 +1,15 @@
+{
+    "presets": [
+        "es2015",
+        "env",
+        "react-app"
+    ],
+    "plugins": [
+        [
+            "babel-plugin-transform-require-ignore",
+            {
+                "extensions": [".css"]
+            }
+        ]
+    ]
+}
