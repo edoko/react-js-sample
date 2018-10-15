@@ -1,6 +1,6 @@
 {
   "name": "react-js-sample",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React.js + React Router v4 + Express.js(Server-side rendering) Boilerplate Project",
   "author": {
     "name": "Seongmin Park",
@@ -26,9 +26,7 @@
     "reactrouter",
     "expressjs",
     "boilerplate",
-    "reactsample",
-    "serverside",
-    "ssr"
+    "reactsample"
   ],
   "dependencies": {
     "compression": "^1.7.0",
@@ -37,10 +35,11 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.11"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
-    "start": "NODE_ENV=production ./node_modules/.bin/babel-node server",
+    "start-win": "set NODE_ENV=production&babel-node server",
+    "start-other": "export BABEL_ENV=production&&babel-node server",
     "build": "react-scripts build",
     "test": "react-scripts build && babel-node server",
     "server": "babel-node server",
